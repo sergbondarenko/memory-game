@@ -22,7 +22,7 @@ function Game() {
     dispatch(actions.setGameResult(startGameTime, new Date(), clickCounter));
     navigate('/end');
   }
-  
+
   const turnCards = (oldCardsList, id1, id2 = -1) => {
     return oldCardsList.map((card) => {
       return {
@@ -65,7 +65,7 @@ function Game() {
   const processFlippedCards = (id) => {
     updateCardsList(endTurnCards(cardsList));
     if (cardsList.length === 2) {
-      setResultAndNavigate(cardsList, startGameTime, clickCounter);
+      setResultAndNavigate(startGameTime, clickCounter);
       return;
     }
 
