@@ -11,6 +11,7 @@ const LastPage = () => {
 /**
  * Look at the Optional Chaining operator as well as the Nullish Coalescing operator
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
 */
     const startGame = new Date(startTime);
     const endGame = new Date(endTime);

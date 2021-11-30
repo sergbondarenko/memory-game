@@ -12,7 +12,7 @@ const createCards = (icons = iconNames) => {
      * https://lodash.com/docs/4.17.15#shuffle
      */
     const randomIconsList = _.sampleSize(icons, maxPairs ?? iconNames.length);
-    const newCardList = [..._.shuffle(randomIconsList),..._.shuffle(randomIconsList)];
+    const newCardList = [...randomIconsList,..._.shuffle(randomIconsList)];
 
     return newCardList.map((item, index) => {
         return {
